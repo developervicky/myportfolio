@@ -17,6 +17,10 @@ export default function Intro() {
           className="flex flex-col gap-2 tracking-wide"
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
+          transition={{
+            type: "spring",
+            duration: 1,
+          }}
         >
           <p className="text-primary font-mono font-semibold sm:text-xl">
             Hello, I'm
@@ -33,6 +37,10 @@ export default function Intro() {
           className="flex flex-col gap-4 sm:flex-row sm:gap-3"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
+          transition={{
+            type: "spring",
+            duration: 1,
+          }}
         >
           <div className="flex gap-3  font-semibold tracking-wide ">
             <a
@@ -74,7 +82,7 @@ export default function Intro() {
         animate={{ opacity: 1, scale: 1 }}
         transition={{
           type: "tween",
-          duration: 0.2,
+          duration: 0.5,
         }}
       >
         <Image
