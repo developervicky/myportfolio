@@ -12,6 +12,7 @@ export default function Header() {
         animate={{ y: 0, x: "-50%", opacity: 1 }}
         transition={{
           type: "spring",
+          stiffness: 130,
           duration: 1,
         }}
       ></motion.div>
@@ -25,6 +26,7 @@ export default function Header() {
               animate={{ y: 0, opacity: 1 }}
               transition={{
                 type: "spring",
+                stiffness: 130,
                 duration: 1,
               }}
             >
