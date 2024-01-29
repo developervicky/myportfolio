@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 export default function About() {
   return (
     <motion.section
-      className="mt-[7rem] flex max-w-[58rem] flex-col items-center justify-center gap-3 px-8 tracking-wide sm:mt-[18rem] sm:px-14  md:mt-[15rem]"
+      className="mt-[6rem] flex max-w-[58rem] flex-col items-center justify-center gap-3 px-8 tracking-wide sm:mt-[18rem] sm:px-14  md:mt-[15rem]"
       initial={{ y: 100, opacity: 0 }}
       animate={{ y: 0, opacity: 100 }}
       transition={{
