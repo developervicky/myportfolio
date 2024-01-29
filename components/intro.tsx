@@ -20,7 +20,7 @@ export default function Intro() {
           transition={{
             type: "spring",
             duration: 1,
-            delay: 0.3,
+            delay: 0.1,
           }}
         >
           <p className="text-primary font-mono font-semibold sm:text-xl">
@@ -41,7 +41,7 @@ export default function Intro() {
           transition={{
             type: "spring",
             duration: 1,
-            delay: 0.5,
+            delay: 0.15,
           }}
         >
           <div className="flex gap-3  font-semibold tracking-wide ">
@@ -84,8 +84,8 @@ export default function Intro() {
         animate={{ opacity: 1, scale: 1 }}
         transition={{
           type: "tween",
-          duration: 0.5,
-          delay: 0.2,
+          duration: 0.3,
+          delay: 0.1,
         }}
       >
         <Image
