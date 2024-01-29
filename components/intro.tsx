@@ -11,7 +11,7 @@ import profileImg from "@/public/ProfilePic.jpg";
 
 export default function Intro() {
   return (
-    <section className="my-[10rem] flex max-w-[900px] grow flex-col-reverse items-center justify-center gap-6 p-4 sm:my-[18rem] md:my-[16rem] sm:flex-row sm:justify-between sm:px-6">
+    <section className="mt-[6rem] flex max-w-[900px] grow flex-col-reverse items-center justify-center gap-6 p-4 sm:mt-[18rem] sm:flex-row sm:justify-between sm:px-6 md:mt-[16rem]">
       <div className="flex flex-col gap-6 ">
         <motion.div
           className="flex flex-col gap-2 tracking-wide"
