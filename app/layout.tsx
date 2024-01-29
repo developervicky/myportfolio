@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className}   relative bg-slate-100 pt-24 text-gray-950 sm:pt-56`}
+        className={`${inter.className}   relative bg-slate-100  text-gray-950 `}
       >
         <Header />
         {children}

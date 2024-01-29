@@ -11,7 +11,7 @@ import profileImg from "@/public/ProfilePic.jpg";
 
 export default function Intro() {
   return (
-    <section className=" flex max-w-[900px] grow flex-col-reverse items-center justify-center gap-6 p-4 sm:flex-row sm:justify-between sm:px-6">
+    <section className="my-[10rem] flex max-w-[900px] grow flex-col-reverse items-center justify-center gap-6 p-4 sm:my-[18rem] md:my-[16rem] sm:flex-row sm:justify-between sm:px-6">
       <div className="flex flex-col gap-6 ">
         <motion.div
           className="flex flex-col gap-2 tracking-wide"
@@ -23,12 +23,12 @@ export default function Intro() {
             delay: 0.1,
           }}
         >
-          <p className="text-primary font-mono font-semibold sm:text-xl">
+          <p className="font-mono font-semibold text-primary sm:text-xl">
             Hello, I'm
           </p>
           <div className="text-2xl !leading-snug sm:text-3xl md:text-4xl">
             <p className="font-bold">Vignesh Kathiresan.</p>
-            <p className="decoration-primary text-[19px] font-semibold text-gray-600 underline underline-offset-4  sm:text-[23px] md:text-[29px]">
+            <p className="text-[19px] font-semibold text-gray-600 underline decoration-primary underline-offset-4  sm:text-[23px] md:text-[29px]">
               Full-Stack Developer
             </p>
           </div>
@@ -65,14 +65,14 @@ export default function Intro() {
             <a
               href="https://www.linkedin.com/in/vignesh-kathiresan-kv/"
               target="_blank"
-              className="hover:text-primary group flex cursor-pointer items-center gap-2 rounded-full bg-white p-2 text-lg shadow-md outline-none transition  hover:scale-105 focus:scale-105 active:scale-105 sm:p-4 sm:text-xl "
+              className="group flex cursor-pointer items-center gap-2 rounded-full bg-white p-2 text-lg shadow-md outline-none transition hover:scale-105  hover:text-primary focus:scale-105 active:scale-105 sm:p-4 sm:text-xl "
             >
               <BsLinkedin />
             </a>
             <a
               href="https://github.com/developervicky"
               target="_blank"
-              className="hover:text-primary group group flex cursor-pointer items-center gap-2 rounded-full bg-white p-2 text-lg shadow-md outline-none transition  hover:scale-105 focus:scale-105 active:scale-105 sm:p-4 sm:text-xl "
+              className="group group flex cursor-pointer items-center gap-2 rounded-full bg-white p-2 text-lg shadow-md outline-none transition hover:scale-105  hover:text-primary focus:scale-105 active:scale-105 sm:p-4 sm:text-xl "
             >
               <FaGithub />
             </a>
