@@ -17,7 +17,7 @@ export default function About() {
       <SectionHeader> About Me </SectionHeader>
       <p className="text-center leading-7 sm:indent-8">
         Hello, I'm Vignesh Kathiresan. At the age of 20, when I've thought of my
-        career options. I had a conviction that i should have to pick career
+        career options. I had a conviction that I should have to pick career
         where people rely on lot. That got me to thinking on how much I've been
         fascinated by technology and web and how it can play a vital role in
         everyone's daily life that thought led me to give a chance to explore
