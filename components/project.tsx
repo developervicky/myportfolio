@@ -31,14 +31,15 @@ export default function Project({
       }}
       className="group mb-3 last:mb-0 sm:mb-8"
     >
-      <section className=" relative mx-8 cursor-pointer  overflow-hidden rounded-lg  border border-black/5 bg-slate-200 transition  hover:bg-slate-300  sm:pr-8  sm:group-even:pl-10 md:max-w-[65rem]">
+      <section className=" relative mx-8 cursor-pointer  overflow-hidden rounded-lg  border border-black/5 bg-slate-200/30
+       transition  hover:bg-primary/[0.12] sm:pr-8  sm:group-even:pl-10 md:max-w-[65rem]">
         <div className="flex h-full flex-col px-5 pb-7 pt-4 group-even:max-w-[40rem] sm:max-w-[50%] sm:pl-10 sm:pr-2 sm:pt-10 sm:group-even:ml-[16rem]  md:max-w-[45%] md:group-even:ml-[22rem] lg:group-even:ml-[26rem] ">
           <h3 className="text-2xl font-semibold">{title}</h3>
           <p className="mt-2 leading-relaxed text-gray-700">{description}</p>
           <ul className="mt-4 flex flex-wrap gap-2 ">
             {tags.map((tag, index) => (
               <li
-                className="rounded-full bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white "
+                className="rounded-full  bg-primary px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white "
                 key={index}
               >
                 {tag}

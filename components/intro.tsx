@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { HiDownload } from "react-icons/hi";
 import Link from "next/link";
@@ -8,10 +8,18 @@ import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";
 import Image from "next/image";
 import profileImg from "@/public/ProfilePic.jpg";
+import { useInView } from "react-intersection-observer";
+import { useActiveSectionContext } from "@/context/activeSecContext";
+import { useSectionInView } from "@/lib/hooks";
 
 export default function Intro() {
+  const { ref } = useSectionInView("Home");
   return (
-    <section className="mt-[7rem] flex max-w-[900px] grow flex-col-reverse items-center justify-center gap-6 p-4 sm:mt-[18rem] sm:flex-row sm:justify-between sm:px-6 md:mt-[16rem]">
+    <section
+      ref={ref}
+      id="home"
+      className="mt-[7rem] flex max-w-[900px] grow scroll-mt-[100rem] flex-col-reverse items-center justify-center gap-6 p-4 sm:mt-[18rem] sm:flex-row sm:justify-between sm:px-6 md:mt-[16rem]"
+    >
       <div className="flex flex-col gap-6 ">
         <motion.div
           className="flex flex-col gap-2 tracking-wide"

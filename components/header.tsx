@@ -3,7 +3,12 @@ import React from "react";
 import { motion, spring } from "framer-motion";
 import { links } from "@/lib/data";
 import Link from "next/link";
+import clsx from "clsx";
+import { useActiveSectionContext } from "@/context/activeSecContext";
+
 export default function Header() {
+  const { activeSec, setActiveSec, setTimeOfLastClick } =
+    useActiveSectionContext();
   return (
     <header className="relative z-[999]">
       <motion.div
@@ -32,9 +37,30 @@ export default function Header() {
             >
               <Link
                 href={link.hash}
-                className="flex w-full items-center justify-center px-[7px] py-3 transition hover:text-gray-950"
+                className={clsx(
+                  "flex w-full items-center justify-center px-[7px] py-3 transition hover:text-gray-950",
+                  {
+                    " text-gray-950 ": activeSec === link.name,
+                  },
+                )}
+                onClick={() => {
+                  setActiveSec(link.name);
+                  setTimeOfLastClick(Date.now());
+                }}
               >
                 {link.name}
+
+                {activeSec === link.name && (
+                  <motion.span
+                    className="absolute inset-0 -z-10 rounded-full bg-primary/[0.12]"
+                    layoutId="activeSec"
+                    transition={{
+                      type: "spring",
+                      stiffness: 380,
+                      damping: 30,
+                    }}
+                  ></motion.span>
+                )}
               </Link>
             </motion.li>
           ))}
