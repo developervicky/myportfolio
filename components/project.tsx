@@ -12,6 +12,8 @@ export default function Project({
   description,
   tags,
   imageUrl,
+  links,
+  website,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -32,7 +34,7 @@ export default function Project({
       className="group mb-3 last:mb-0 sm:mb-8"
     >
       <section
-        className=" relative mx-8 cursor-pointer  overflow-hidden rounded-lg  border border-black/5 bg-slate-200/30
+        className=" relative mx-8 overflow-hidden rounded-lg  border border-black/5 bg-slate-200/30
        transition  hover:bg-primary/[0.12] sm:pr-8  sm:group-even:pl-10 md:max-w-[65rem]"
       >
         <div className="flex h-full flex-col px-5 pb-7 pt-4 group-even:max-w-[40rem] sm:max-w-[50%] sm:pl-10 sm:pr-2 sm:pt-10 sm:group-even:ml-[16rem]  md:max-w-[45%] md:group-even:ml-[22rem] lg:group-even:ml-[26rem] ">
@@ -48,13 +50,29 @@ export default function Project({
               </li>
             ))}
           </ul>
+          <ul className="ml-1 mt-4 flex gap-3">
+            {links.map((link, index) => (
+              <li
+                key={index}
+                className=" cursor-pointer rounded-full bg-white/60 p-2 text-2xl transition hover:scale-110 hover:text-primary"
+              >
+                <a target="_blank" href={link.link}>
+                  {link.icon}
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
-        <Image
-          src={imageUrl}
-          alt={title}
-          quality={95}
-          className="absolute -right-40 top-8 hidden rounded-t-lg object-cover shadow-2xl transition group-even:-left-40 group-even:right-[initial]  group-hover:rotate-[0.8deg] group-hover:scale-[1.03]  group-even:group-hover:-rotate-[0.8deg] sm:block sm:w-[28rem] md:w-[35rem]  "
-        />
+        <div>
+          <a target="_blank" href={website}>
+            <Image
+              src={imageUrl}
+              alt={title}
+              quality={95}
+              className="absolute -right-40 top-8 hidden rounded-t-lg object-cover shadow-2xl transition group-even:-left-40 group-even:right-[initial]  group-hover:rotate-[0.8deg] group-hover:scale-[1.03]  group-even:group-hover:-rotate-[0.8deg] sm:block sm:w-[28rem] md:w-[35rem]  "
+            />
+          </a>
+        </div>
       </section>
     </motion.div>
   );

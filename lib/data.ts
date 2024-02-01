@@ -1,6 +1,6 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
+import { FaFigma, FaGithub, FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import studentSpaceImg from "@/public/studentSpace.jpg";
 import tripRoverImg from "@/public/tripRover.jpg";
@@ -17,6 +17,7 @@ import tailwindLogo from "@/public/tailwind-css-2.svg";
 import fmLogo from "@/public/framer-motion.svg";
 import pyLogo from "@/public/python-5.svg";
 import figmaLogo from "@/public/Figma-logo.svg";
+import { FiExternalLink } from "react-icons/fi";
 
 export const links = [
   {
@@ -80,6 +81,19 @@ export const projectsData = [
       "A social media platform for college campuses, facilitating seamless collaboration andknowledge exchange among students, faculty, staff, and community members",
     tags: ["React", "Node", "Express", "MongoDB", "Tailwind"],
     imageUrl: studentSpaceImg,
+    website: "https://studentspaces.vercel.app/",
+    links: [
+      {
+        name: "website",
+        link: "https://studentspaces.vercel.app/",
+        icon: React.createElement(FiExternalLink),
+      },
+      {
+        name: "github",
+        link: "https://github.com/developervicky/studentSpace",
+        icon: React.createElement(FaGithub),
+      },
+    ],
   },
   {
     title: "tripRover",
@@ -87,6 +101,19 @@ export const projectsData = [
       "A CRUD application for booking accommodations that are responsive and gives accommodation owners andbookers access to their own dashboards for managing their reservations",
     tags: ["React", "Node", "Express", "MongoDB", "Tailwind"],
     imageUrl: tripRoverImg,
+    website: "https://triprover.vercel.app/",
+    links: [
+      {
+        name: "website",
+        link: "https://triprover.vercel.app/",
+        icon: React.createElement(FiExternalLink),
+      },
+      {
+        name: "github",
+        link: "https://github.com/developervicky/tripRover",
+        icon: React.createElement(FaGithub),
+      },
+    ],
   },
   {
     title: "Foodie",
@@ -94,6 +121,15 @@ export const projectsData = [
       "Designed a food delivery application’s user interface using Figma. The design is smartphone-based.",
     tags: ["Figma"],
     imageUrl: foodieImg,
+    website:
+      "https://www.figma.com/proto/QencsTZr5puXlHeUQaCK2Y/Foodie---Mockup?type=design&node-id=1-2&t=DeTZu3xCn3EMbC0U-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2&mode=design",
+    links: [
+      {
+        name: "figma",
+        link: "https://www.figma.com/proto/QencsTZr5puXlHeUQaCK2Y/Foodie---Mockup?type=design&node-id=1-2&t=DeTZu3xCn3EMbC0U-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2&mode=design",
+        icon: React.createElement(FiExternalLink),
+      },
+    ],
   },
 ] as const;
 
