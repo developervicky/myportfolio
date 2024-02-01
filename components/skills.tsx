@@ -4,17 +4,19 @@ import SectionHeader from "./sectionHeader";
 import { skillsData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const fadeInAnimationVariants = {
   initial: {
     opacity: 0,
-    y: 100,
+    x: 0,
   },
   animate: (index: number) => ({
     opacity: 1,
-    y: 0,
+    x: 0,
     transition: {
-      delay: 0.05 * index,
+      type: "spring",
+      delay: 0.1 * index,
     },
   }),
 };
@@ -28,21 +30,26 @@ export default function Skills() {
       className="mt-[7rem] flex max-w-[54rem] scroll-mt-[6.5rem] flex-col items-center  justify-center gap-3 px-10"
     >
       <SectionHeader>Skills</SectionHeader>
-      <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
+      <ul className="mt-3 flex flex-wrap justify-center gap-2 text-lg text-gray-800">
         {skillsData.map((skill, index) => (
-          <motion.li
-            key={index}
-            className="rounded-xl border border-black/[0.1] bg-white px-5 py-3"
-            variants={fadeInAnimationVariants}
-            initial="initial"
-            whileInView="animate"
-            viewport={{
-              once: true,
-            }}
-            custom={index}
-          >
-            {skill}
-          </motion.li>
+          <React.Fragment key={index}>
+            <motion.li
+              className="flex rounded-full border border-black/[0.1] bg-white p-3 shadow-lg transition hover:scale-125 hover:border-primary sm:p-4 mb-4 "
+              variants={fadeInAnimationVariants}
+              initial="initial"
+              whileInView="animate"
+              viewport={{
+                once: true,
+              }}
+              custom={index}
+            >
+              <Image
+                src={skill.icon}
+                className="flex h-10 w-10 justify-center p-[5px] sm:h-14 sm:w-14"
+                alt={skill.name}
+              />
+            </motion.li>
+          </React.Fragment>
         ))}
       </ul>
     </section>

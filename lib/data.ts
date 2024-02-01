@@ -5,6 +5,18 @@ import { LuGraduationCap } from "react-icons/lu";
 import studentSpaceImg from "@/public/studentSpace.jpg";
 import tripRoverImg from "@/public/tripRover.jpg";
 import foodieImg from "@/public/foodie.jpg";
+import reactLogo from "@/public/react-2.svg";
+import nodeLogo from "@/public/nodejs-1.svg";
+import expressLogo from "@/public/expressjs-icon.svg";
+import mongoLogo from "@/public/mongodb-icon-2.svg";
+import jsLogo from "@/public/logo-javascript.svg";
+import tsLogo from "@/public/typescript.svg";
+import nextLogo from "@/public/next-js.svg";
+import gitLogo from "@/public/github-icon-1.svg";
+import tailwindLogo from "@/public/tailwind-css-2.svg";
+import fmLogo from "@/public/framer-motion.svg";
+import pyLogo from "@/public/python-5.svg";
+import figmaLogo from "@/public/Figma-logo.svg";
 
 export const links = [
   {
@@ -86,17 +98,52 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "Git",
-  "Tailwind",
-  "MongoDB",
-  "Express",
-  "Python",
-  "Framer Motion",
+  {
+    name: "React",
+    icon: reactLogo,
+  },
+  {
+    name: "Node",
+    icon: nodeLogo,
+  },
+  {
+    name: "Express",
+    icon: expressLogo,
+  },
+  {
+    name: "MongoDB",
+    icon: mongoLogo,
+  },
+  {
+    name: "Javascript",
+    icon: jsLogo,
+  },
+  {
+    name: "Typescript",
+    icon: tsLogo,
+  },
+  {
+    name: "NextJS",
+    icon: nextLogo,
+  },
+  {
+    name: "Github",
+    icon: gitLogo,
+  },
+  {
+    name: "Tailwind",
+    icon: tailwindLogo,
+  },
+  {
+    name: "Framer Motion",
+    icon: fmLogo,
+  },
+  {
+    name: "Figma",
+    icon: figmaLogo,
+  },
+  {
+    name: "Python",
+    icon: pyLogo,
+  },
 ] as const;

@@ -16,7 +16,7 @@ export default function Projects() {
       className="mt-[7rem] flex scroll-mt-[6.5rem] flex-col items-center justify-center gap-3"
     >
       <SectionHeader>Projects</SectionHeader>
-      <div>
+      <div className="mt-3">
         {projectsData.map((project, index) => (
           <React.Fragment key={index}>
             <Project {...project} />

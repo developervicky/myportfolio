@@ -22,7 +22,7 @@ export default function About() {
       }}
     >
       <SectionHeader> About Me </SectionHeader>
-      <p className="text-center leading-7 sm:indent-8">
+      <p className="mt-3 text-center leading-7 sm:indent-8">
         Hello, I'm Vignesh Kathiresan. At the age of 20, when I've thought of my
         career options. I had a conviction that I should have to pick career
         where people rely on lot. That got me to thinking on how much I've been
