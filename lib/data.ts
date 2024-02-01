@@ -17,7 +17,7 @@ import tailwindLogo from "@/public/tailwind-css-2.svg";
 import fmLogo from "@/public/framer-motion.svg";
 import pyLogo from "@/public/python-5.svg";
 import figmaLogo from "@/public/Figma-logo.svg";
-import { FiExternalLink } from "react-icons/fi";
+import { FiExternalLink, FiFigma } from "react-icons/fi";
 
 export const links = [
   {
@@ -125,9 +125,14 @@ export const projectsData = [
       "https://www.figma.com/proto/QencsTZr5puXlHeUQaCK2Y/Foodie---Mockup?type=design&node-id=1-2&t=DeTZu3xCn3EMbC0U-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2&mode=design",
     links: [
       {
+        name: "doc",
+        link: "https://docs.google.com/presentation/d/1SH5z5Gbje7qCqds2oh9GgbD8eygX65V3LzewpkX7pA4/edit?usp=sharing",
+        icon: React.createElement(FiExternalLink),
+      },
+      {
         name: "figma",
         link: "https://www.figma.com/proto/QencsTZr5puXlHeUQaCK2Y/Foodie---Mockup?type=design&node-id=1-2&t=DeTZu3xCn3EMbC0U-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2&mode=design",
-        icon: React.createElement(FiExternalLink),
+        icon: React.createElement(FiFigma),
       },
     ],
   },
