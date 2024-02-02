@@ -69,7 +69,7 @@ export default function Project({
               src={imageUrl}
               alt={title}
               quality={95}
-              className="absolute -right-40 top-8 hidden rounded-t-lg object-cover shadow-2xl transition group-even:-left-40 group-even:right-[initial]  group-hover:rotate-[0.8deg] group-hover:scale-[1.03]  group-even:group-hover:-rotate-[0.8deg] sm:block sm:w-[28rem] md:w-[35rem]  "
+              className="absolute -right-40 top-8 hidden rounded-lg object-cover shadow-2xl transition group-even:-left-40 group-even:right-[initial]  group-hover:rotate-[0.8deg] group-hover:scale-[1.03]  group-even:group-hover:-rotate-[0.8deg] sm:block sm:w-[28rem] md:w-[35rem]  "
             />
           </a>
         </div>

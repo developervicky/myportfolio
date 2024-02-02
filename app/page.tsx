@@ -3,6 +3,7 @@ import Intro from "@/components/intro";
 import Projects from "@/components/projects";
 import Skills from "@/components/skills";
 import Path from "@/components/path";
+import Contact from "@/components/contact";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Skills />
       <Projects />
       <Path />
+      <Contact />
     </main>
   );
 }
