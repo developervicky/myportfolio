@@ -4,7 +4,7 @@ import SectionHeader from "./sectionHeader";
 import { useSectionInView } from "@/lib/hooks";
 
 export default function Contact() {
-  const { ref } = useSectionInView("Projects", 0.4);
+  const { ref } = useSectionInView("Contact", 0.4);
   return (
     <section
       ref={ref}
