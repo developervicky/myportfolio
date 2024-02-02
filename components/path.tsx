@@ -9,12 +9,15 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { pathData } from "@/lib/data";
+import { motion } from "framer-motion";
 
 export default function Path() {
   const { ref } = useSectionInView("Path", 0.5);
   return (
-    <section
+    <motion.section
       ref={ref}
+      initial={{ x: 0, opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
       id="path"
       className="mt-[7rem] flex scroll-mt-[6.5rem] flex-col items-center gap-8 px-8   lg:w-[65rem]"
     >
@@ -40,17 +43,18 @@ export default function Path() {
                 background: "white",
                 fontSize: "1.5rem",
               }}
+
             >
               <h3 className="!font-semibold !capitalize ">{each.title}</h3>
               <p className="!mt-1 !text-gray-600">{each.organization}</p>
               <p className="!mt-1 !text-sm !font-normal !text-gray-600">
                 {each.location}
               </p>
-              <p className="!font-normal !mt-2">Score: {each.gpa}</p>
+              <p className="!mt-2 !font-normal">Score: {each.gpa}</p>
             </VerticalTimelineElement>
           </React.Fragment>
         ))}
       </VerticalTimeline>
-    </section>
+    </motion.section>
   );
 }

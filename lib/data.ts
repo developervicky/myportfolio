@@ -49,13 +49,13 @@ export const links = [
 
 export const pathData = [
   {
-    title: "Secondary School",
-    organization: "Sri Krishnaswamy Matriculation Higher Secondary School",
+    title: "B.Tech Computer Science & Engineering",
+    organization: "SRM University, Ramapuram",
     location: "Chennai, India",
-    gpa: "91%",
+    gpa: "8.94/10",
     description: "",
     icon: React.createElement(LuGraduationCap),
-    date: "2018",
+    date: "2024",
   },
   {
     title: "Higher Secondary School",
@@ -67,13 +67,13 @@ export const pathData = [
     date: "2020",
   },
   {
-    title: "B.Tech Computer Science & Engineering",
-    organization: "SRM University, Ramapuram",
+    title: "Secondary School",
+    organization: "Sri Krishnaswamy Matriculation Higher Secondary School",
     location: "Chennai, India",
-    gpa: "8.94/10",
+    gpa: "91%",
     description: "",
     icon: React.createElement(LuGraduationCap),
-    date: "2024",
+    date: "2018",
   },
 ] as const;
 
