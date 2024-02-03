@@ -43,7 +43,6 @@ export default function Path() {
                 background: "white",
                 fontSize: "1.5rem",
               }}
-
             >
               <h3 className="!font-semibold !capitalize ">{each.title}</h3>
               <p className="!mt-1 !text-gray-600">{each.organization}</p>

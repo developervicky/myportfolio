@@ -14,6 +14,7 @@ import { useSectionInView } from "@/lib/hooks";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home");
+  const { setActiveSec, setTimeOfLastClick } = useActiveSectionContext();
   return (
     <section
       ref={ref}
@@ -63,6 +64,10 @@ export default function Intro() {
             </a>
             <Link
               href="#contact"
+              onClick={() => {
+                setActiveSec("Contact");
+                setTimeOfLastClick(Date.now());
+              }}
               className="group flex cursor-pointer items-center gap-2 rounded-full bg-white px-4 py-2 text-sm shadow-md outline-none  transition hover:scale-105 focus:scale-105 active:scale-105 sm:px-7 sm:py-3 sm:text-base "
             >
               Contact Me
