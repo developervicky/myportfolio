@@ -53,7 +53,7 @@ export default function Contact() {
         <input
           type="text"
           name="name"
-          className="h-14 rounded-lg border border-black/10 p-4  focus:outline-primary"
+          className="h-14 rounded-lg border border-black/10 p-4 focus:outline-primary active:outline-primary"
           required
           maxLength={500}
           placeholder="Your Name"
@@ -61,7 +61,7 @@ export default function Contact() {
         <input
           type="email"
           name="senderEmail"
-          className="mt-3 h-14 rounded-lg border border-black/10 p-4 focus:outline-primary"
+          className="mt-3 h-14 rounded-lg border border-black/10 p-4 focus:outline-primary active:outline-primary"
           required
           maxLength={500}
           placeholder="Your email"
@@ -69,7 +69,7 @@ export default function Contact() {
         <textarea
           placeholder="Your message"
           name="msg"
-          className="my-3 h-52 rounded-lg border-black/10 p-4 focus:outline-primary"
+          className="my-3 h-52 rounded-lg border-black/10 p-4 focus:outline-primary active:outline-primary"
           required
           maxLength={5000}
         />
