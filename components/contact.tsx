@@ -56,7 +56,7 @@ export default function Contact() {
           className="h-14 rounded-lg border border-black/10 p-4 focus:outline-primary active:outline-primary dark:bg-white/10"
           required
           maxLength={500}
-          placeholder="Your Name"
+          placeholder="Your name"
         />
         <input
           type="email"
