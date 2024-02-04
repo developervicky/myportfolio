@@ -37,7 +37,7 @@ export default function Intro() {
           </p>
           <div className="text-2xl !leading-snug sm:text-3xl md:text-4xl">
             <p className="font-bold">Vignesh Kathiresan.</p>
-            <p className="text-[19px] font-semibold text-gray-600 underline decoration-primary underline-offset-4  sm:text-[23px] md:text-[29px]">
+            <p className="text-[19px] font-semibold text-gray-600 underline decoration-primary underline-offset-4 sm:text-[23px]  md:text-[29px] dark:text-gray-400">
               Full-Stack Developer
             </p>
           </div>
@@ -57,7 +57,7 @@ export default function Intro() {
             <a
               href="/Resume.pdf"
               target="_blank"
-              className="group flex cursor-pointer items-center gap-2 rounded-full bg-white px-4 py-2 text-sm shadow-md outline-none  transition hover:scale-105 focus:scale-105 active:scale-105 sm:px-7 sm:py-3 sm:text-base "
+              className="group flex cursor-pointer items-center gap-2 rounded-full bg-white px-4 py-2 text-sm shadow-md outline-none  transition-all hover:scale-105 focus:scale-105 active:scale-105 sm:px-7 sm:py-3 sm:text-base dark:bg-white/10 "
             >
               Resume
               <HiDownload className="text-primary transition  group-hover:translate-y-0.5 " />
@@ -68,7 +68,7 @@ export default function Intro() {
                 setActiveSec("Contact");
                 setTimeOfLastClick(Date.now());
               }}
-              className="group flex cursor-pointer items-center gap-2 rounded-full bg-white px-4 py-2 text-sm shadow-md outline-none  transition hover:scale-105 focus:scale-105 active:scale-105 sm:px-7 sm:py-3 sm:text-base "
+              className="group flex cursor-pointer items-center gap-2 rounded-full bg-white px-4 py-2 text-sm shadow-md outline-none  transition-all  hover:scale-105 focus:scale-105 active:scale-105 sm:px-7 sm:py-3 sm:text-base dark:bg-white/10 "
             >
               Contact Me
               <BsArrowRight className="text-primary transition  group-hover:translate-x-0.5 " />
@@ -78,14 +78,14 @@ export default function Intro() {
             <a
               href="https://www.linkedin.com/in/vignesh-kathiresan-kv/"
               target="_blank"
-              className="group flex cursor-pointer items-center gap-2 rounded-full bg-white p-2 text-lg shadow-md outline-none transition hover:scale-105  hover:text-primary focus:scale-105 active:scale-105 sm:p-4 sm:text-xl "
+              className="group flex cursor-pointer items-center gap-2 rounded-full bg-white p-2 text-lg shadow-md outline-none transition-all hover:scale-105  hover:text-primary   focus:scale-105 active:scale-105 sm:p-4 sm:text-xl dark:bg-white/10 "
             >
               <BsLinkedin />
             </a>
             <a
               href="https://github.com/developervicky"
               target="_blank"
-              className="group group flex cursor-pointer items-center gap-2 rounded-full bg-white p-2 text-lg shadow-md outline-none transition hover:scale-105  hover:text-primary focus:scale-105 active:scale-105 sm:p-4 sm:text-xl "
+              className="group group flex cursor-pointer items-center gap-2 rounded-full bg-white p-2 text-lg shadow-md outline-none transition-all hover:scale-105  hover:text-primary  focus:scale-105 active:scale-105 sm:p-4 sm:text-xl dark:bg-white/10 "
             >
               <FaGithub />
             </a>

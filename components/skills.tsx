@@ -34,7 +34,7 @@ export default function Skills() {
         {skillsData.map((skill, index) => (
           <React.Fragment key={index}>
             <motion.li
-              className="mb-4 flex rounded-full border border-black/[0.1] bg-white p-3 shadow-lg transition hover:scale-125 hover:border-primary sm:p-4 "
+              className="mb-4 flex rounded-full border border-black/[0.1] bg-white p-3 shadow-lg transition hover:scale-125 hover:border-primary  sm:p-4 "
               variants={fadeInAnimationVariants}
               initial="initial"
               whileInView="animate"

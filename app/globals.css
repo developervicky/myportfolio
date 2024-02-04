@@ -5,3 +5,7 @@
 html {
   --line-color: #fabf9d;
 }
+
+html.dark{
+  --line-color: #503c30;
+}

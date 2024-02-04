@@ -5,6 +5,8 @@ import Header from "@/components/header";
 import ActiveSecContextProvider from "@/context/activeSecContext";
 import { Toaster } from "react-hot-toast";
 import Footer from "@/components/footer";
+import ThemeSwitch from "@/components/themeSwitch";
+import ThemeContextProvider from "@/context/themeContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,15 +24,18 @@ export default function RootLayout({
   return (
     <html lang="en" className="!scroll-smooth">
       <body
-        className={`${inter.className}  relative bg-slate-100  text-gray-950 `}
+        className={`${inter.className}  relative bg-slate-100  text-gray-950 dark:bg-slate-900 dark:text-gray-50 dark:text-opacity-90 `}
         suppressHydrationWarning={true}
       >
-        <ActiveSecContextProvider>
-          <Header />
-          {children}
-          <Toaster position="top-right" />
-          <Footer />
-        </ActiveSecContextProvider>
+        <ThemeContextProvider>
+          <ActiveSecContextProvider>
+            <Header />
+            {children}
+            <Toaster position="top-right" />
+            <Footer />
+            <ThemeSwitch />
+          </ActiveSecContextProvider>
+        </ThemeContextProvider>
       </body>
     </html>
   );

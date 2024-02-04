@@ -10,9 +10,11 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import { pathData } from "@/lib/data";
 import { motion } from "framer-motion";
+import { useTheme } from "@/context/themeContext";
 
 export default function Path() {
   const { ref } = useSectionInView("Path", 0.5);
+  const { theme } = useTheme();
   return (
     <motion.section
       ref={ref}
@@ -28,10 +30,10 @@ export default function Path() {
             <VerticalTimelineElement
               visible={true}
               contentStyle={{
-                background: "#ecf1f6",
+                background: theme === "light" ? "#ecf1f6" : "#242d3e",
                 // bg-slate-200/30
                 boxShadow: "none",
-                border: "1px solid #fadbca",
+                border: theme === "light" ? "1px solid #fadbca" : "",
                 textAlign: "left",
                 padding: "1.3rem 2rem",
               }}
@@ -41,16 +43,22 @@ export default function Path() {
               date={each.date}
               icon={each.icon}
               iconStyle={{
-                background: "white",
+                background:
+                  theme === "light" ? "white" : "rgba(255,255,255,0.15)",
                 color: "#FBAB7E",
+                boxShadow: "none",
               }}
             >
               <h3 className="!font-semibold !capitalize ">{each.title}</h3>
-              <p className="!mt-1 !text-gray-600">{each.organization}</p>
-              <p className="!mt-1 !text-sm !font-normal !text-gray-600">
+              <p className="!mt-1 !text-gray-600 dark:!text-gray-400">
+                {each.organization}
+              </p>
+              <p className="!mt-1 !text-sm !font-normal !text-gray-600 dark:!text-gray-400">
                 {each.location}
               </p>
-              <p className="!mt-2 !font-normal">Score: {each.gpa}</p>
+              <p className="!mt-2 !font-normal !text-gray-600 dark:!text-gray-400">
+                Score: {each.gpa}
+              </p>
             </VerticalTimelineElement>
           </React.Fragment>
         ))}
