@@ -6,6 +6,15 @@ html {
   --line-color: #fabf9d;
 }
 
-html.dark{
+html.dark {
   --line-color: #503c30;
+}
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: white;
+}
+::-webkit-scrollbar-thumb {
+  background: #FBAB7E; 
 }
