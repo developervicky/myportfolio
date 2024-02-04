@@ -29,7 +29,10 @@ export default function Contact() {
       <SectionHeader>Contact Me</SectionHeader>
       <p className="mt-3 text-gray-700">
         Please contact me at{" "}
-        <a href="mailto:vigneshkathiresan@outlook.com" className="underline">
+        <a
+          href="mailto:vigneshkathiresan@outlook.com"
+          className="underline decoration-primary"
+        >
           vigneshkathiresan@outlook.com
         </a>{" "}
         or through this form
@@ -50,7 +53,7 @@ export default function Contact() {
         <input
           type="text"
           name="name"
-          className="h-14 rounded-lg border border-black/10 p-4"
+          className="h-14 rounded-lg border border-black/10 p-4  focus:outline-primary"
           required
           maxLength={500}
           placeholder="Your Name"
@@ -58,7 +61,7 @@ export default function Contact() {
         <input
           type="email"
           name="senderEmail"
-          className="mt-3 h-14 rounded-lg border border-black/10 p-4"
+          className="mt-3 h-14 rounded-lg border border-black/10 p-4 focus:outline-primary"
           required
           maxLength={500}
           placeholder="Your email"
@@ -66,7 +69,7 @@ export default function Contact() {
         <textarea
           placeholder="Your message"
           name="msg"
-          className="my-3 h-52 rounded-lg border-black/10 p-4"
+          className="my-3 h-52 rounded-lg border-black/10 p-4 focus:outline-primary"
           required
           maxLength={5000}
         />

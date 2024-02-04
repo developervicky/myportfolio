@@ -28,20 +28,21 @@ export default function Path() {
             <VerticalTimelineElement
               visible={true}
               contentStyle={{
-                background: "#e2e8f0",
+                background: "#ecf1f6",
+                // bg-slate-200/30
                 boxShadow: "none",
-                border: "1px solid rgba(0,0,0,0.05)",
+                border: "1px solid #fadbca",
                 textAlign: "left",
                 padding: "1.3rem 2rem",
               }}
               contentArrowStyle={{
-                borderRight: "0.4rem solid #9ca3af",
+                borderRight: "0.4rem solid #fbab7e",
               }}
               date={each.date}
               icon={each.icon}
               iconStyle={{
                 background: "white",
-                fontSize: "1.5rem",
+                color: "#FBAB7E",
               }}
             >
               <h3 className="!font-semibold !capitalize ">{each.title}</h3>
