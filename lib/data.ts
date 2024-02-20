@@ -4,6 +4,7 @@ import { FaFigma, FaGithub, FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import studentSpaceImg from "@/public/studentSpace.jpg";
 import tripRoverImg from "@/public/tripRover.jpg";
+import shareThoughtsImg from "@/public/shareThoughts.jpg";
 import foodieImg from "@/public/foodie.jpg";
 import reactLogo from "@/public/react-2.svg";
 import nodeLogo from "@/public/nodejs-1.svg";
@@ -114,6 +115,26 @@ export const projectsData = [
       {
         name: "github",
         link: "https://github.com/developervicky/tripRover",
+        icon: React.createElement(FaGithub),
+      },
+    ],
+  },
+  {
+    title: "shareThoughts",
+    description:
+      "A CRUD application for sharing your thought without getting back any judgemental notes at this modern world.",
+    tags: ["NextJS", "NextAuth", "MongoDB", "Tailwind", "Framer-Motion"],
+    imageUrl: shareThoughtsImg,
+    website: "https://sharethoughts.vercel.app/",
+    links: [
+      {
+        name: "website",
+        link: "https://sharethoughts.vercel.app/",
+        icon: React.createElement(FiExternalLink),
+      },
+      {
+        name: "github",
+        link: "https://github.com/developervicky/shareThoughts",
         icon: React.createElement(FaGithub),
       },
     ],
