@@ -128,8 +128,8 @@ export const projectsData = [
       "NextJS",
       "TypeScript",
       "NodeJS",
-      "Tailwind",
       "MongoDB",
+      "Tailwind",
       "Shadcn",
       "Stripe",
       "UploadThing",
@@ -156,9 +156,9 @@ export const projectsData = [
     tags: [
       "NextJS",
       "React",
-      "Tailwind",
-      "NextAuth",
       "MongoDB",
+      "NextAuth",
+      "Tailwind",
       "Framer-Motion",
     ],
     imageUrl: shareThoughtsImg,
@@ -201,8 +201,20 @@ export const projectsData = [
 
 export const skillsData = [
   {
-    name: "React",
+    name: "NextJS",
+    icon: nextLogo,
+  },
+  {
+    name: "ReactJS",
     icon: reactLogo,
+  },
+  {
+    name: "Javascript",
+    icon: jsLogo,
+  },
+  {
+    name: "Typescript",
+    icon: tsLogo,
   },
   {
     name: "Node",
@@ -215,18 +227,6 @@ export const skillsData = [
   {
     name: "MongoDB",
     icon: mongoLogo,
-  },
-  {
-    name: "Javascript",
-    icon: jsLogo,
-  },
-  {
-    name: "Typescript",
-    icon: tsLogo,
-  },
-  {
-    name: "NextJS",
-    icon: nextLogo,
   },
   {
     name: "Github",
