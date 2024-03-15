@@ -7,6 +7,7 @@ import tripRoverImg from "@/public/tripRover.jpg";
 import shareThoughtsImg from "@/public/shareThoughts.jpg";
 import bookEventImg from "@/public/bookEvent.jpg";
 import foodieImg from "@/public/foodie.jpg";
+import DMMEImg from "@/public/DMME.jpg";
 import reactLogo from "@/public/react-2.svg";
 import nodeLogo from "@/public/nodejs-1.svg";
 import expressLogo from "@/public/expressjs-icon.svg";
@@ -101,26 +102,6 @@ export const projectsData = [
     ],
   },
   {
-    title: "tripRover",
-    description:
-      "A CRUD application for booking accommodations that are responsive and gives accommodation owners andbookers access to their own dashboards for managing their reservations",
-    tags: ["React", "Node", "Express", "MongoDB", "Tailwind"],
-    imageUrl: tripRoverImg,
-    website: "https://triprover.vercel.app/",
-    links: [
-      {
-        name: "website",
-        link: "https://triprover.vercel.app/",
-        icon: React.createElement(FiExternalLink),
-      },
-      {
-        name: "github",
-        link: "https://github.com/developervicky/tripRover",
-        icon: React.createElement(FaGithub),
-      },
-    ],
-  },
-  {
     title: "bookEvent",
     description:
       "A CRUD application for booking events. The user friendly place to book your events at few steps.",
@@ -149,6 +130,57 @@ export const projectsData = [
       },
     ],
   },
+  {
+    title: "DMME",
+    description:
+      "A real-time chat application with 100% data privacy. The user friendly interface to chat with your fellas and also have group chat feature.",
+    tags: [
+      "NextJS",
+      "TypeScript",
+      "NodeJS",
+      "MongoDB",
+      "Prisma",
+      "Tailwind",
+      "Next-Auth",
+      "React-Hook Form",
+      "Pusher",
+    ],
+    imageUrl: DMMEImg,
+    website: "https://dmme-chat.vercel.app/",
+    links: [
+      {
+        name: "website",
+        link: "https://dmme-chat.vercel.app/",
+        icon: React.createElement(FiExternalLink),
+      },
+      {
+        name: "github",
+        link: "https://github.com/developervicky/dmme",
+        icon: React.createElement(FaGithub),
+      },
+    ],
+  },
+  {
+    title: "tripRover",
+    description:
+      "A CRUD application for booking accommodations that are responsive and gives accommodation owners andbookers access to their own dashboards for managing their reservations",
+    tags: ["React", "Node", "Express", "MongoDB", "Tailwind"],
+    imageUrl: tripRoverImg,
+    website: "https://triprover.vercel.app/",
+    links: [
+      {
+        name: "website",
+        link: "https://triprover.vercel.app/",
+        icon: React.createElement(FiExternalLink),
+      },
+      {
+        name: "github",
+        link: "https://github.com/developervicky/tripRover",
+        icon: React.createElement(FaGithub),
+      },
+    ],
+  },
+
   {
     title: "shareThoughts",
     description:
