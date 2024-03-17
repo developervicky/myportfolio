@@ -8,6 +8,7 @@ import Footer from "@/components/footer";
 import ThemeSwitch from "@/components/themeSwitch";
 import ThemeContextProvider from "@/context/themeContext";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -36,6 +37,7 @@ export default function RootLayout({
             <Footer />
             <ThemeSwitch />
             <Analytics />
+            <SpeedInsights />
           </ActiveSecContextProvider>
         </ThemeContextProvider>
       </body>
