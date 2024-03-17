@@ -82,26 +82,6 @@ export const pathData = [
 
 export const projectsData = [
   {
-    title: "studentSpace",
-    description:
-      "A social media platform for college campuses, facilitating seamless collaboration andknowledge exchange among students, faculty, staff, and community members",
-    tags: ["React", "Node", "Express", "MongoDB", "Tailwind"],
-    imageUrl: studentSpaceImg,
-    website: "https://studentspaces.vercel.app/",
-    links: [
-      {
-        name: "website",
-        link: "https://studentspaces.vercel.app/",
-        icon: React.createElement(FiExternalLink),
-      },
-      {
-        name: "github",
-        link: "https://github.com/developervicky/studentSpace",
-        icon: React.createElement(FaGithub),
-      },
-    ],
-  },
-  {
     title: "bookEvent",
     description:
       "A CRUD application for booking events. The user friendly place to book your events at few steps.",
@@ -204,6 +184,26 @@ export const projectsData = [
       {
         name: "github",
         link: "https://github.com/developervicky/shareThoughts",
+        icon: React.createElement(FaGithub),
+      },
+    ],
+  },
+  {
+    title: "studentSpace",
+    description:
+      "A social media platform for college campuses, facilitating seamless collaboration andknowledge exchange among students, faculty, staff, and community members",
+    tags: ["React", "Node", "Express", "MongoDB", "Tailwind"],
+    imageUrl: studentSpaceImg,
+    website: "https://studentspaces.vercel.app/",
+    links: [
+      {
+        name: "website",
+        link: "https://studentspaces.vercel.app/",
+        icon: React.createElement(FiExternalLink),
+      },
+      {
+        name: "github",
+        link: "https://github.com/developervicky/studentSpace",
         icon: React.createElement(FaGithub),
       },
     ],
