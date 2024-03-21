@@ -85,7 +85,7 @@ export const projectsData = [
   {
     title: "doc.AI",
     description:
-      "An application for chatting with your PDF documents integrated with openAI. Free and Pro plans are available, and provided limited application features based on the plan.",
+      "A web application for chatting with your PDF documents integrated with openAI. Free and Pro plans were available and provided limited application features based on the plan.",
     tags: [
       "NextJS",
       "TypeScript",
