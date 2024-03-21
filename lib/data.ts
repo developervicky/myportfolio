@@ -7,6 +7,7 @@ import tripRoverImg from "@/public/tripRover.jpg";
 import shareThoughtsImg from "@/public/shareThoughts.jpg";
 import bookEventImg from "@/public/bookEvent.jpg";
 import foodieImg from "@/public/foodie.jpg";
+import docAIImg from "@/public/docAI.jpg";
 import DMMEImg from "@/public/DMME.jpg";
 import reactLogo from "@/public/react-2.svg";
 import nodeLogo from "@/public/nodejs-1.svg";
@@ -82,6 +83,39 @@ export const pathData = [
 
 export const projectsData = [
   {
+    title: "doc.AI",
+    description:
+      "An application for chatting with your PDF documents integrated with openAI. Free and Pro plans are available, and provided limited application features based on the plan.",
+    tags: [
+      "NextJS",
+      "TypeScript",
+      "NodeJS",
+      "NeonTech",
+      "Tailwind",
+      "Shadcn",
+      "Prisma",
+      "openAI",
+      "tRPC",
+      "zod",
+      "Stripe",
+      "UploadThing",
+    ],
+    imageUrl: docAIImg,
+    website: "https://doc--ai.vercel.app/",
+    links: [
+      {
+        name: "website",
+        link: "https://doc--ai.vercel.app/",
+        icon: React.createElement(FiExternalLink),
+      },
+      {
+        name: "github",
+        link: "https://github.com/developervicky/docai",
+        icon: React.createElement(FaGithub),
+      },
+    ],
+  },
+  {
     title: "bookEvent",
     description:
       "A CRUD application for booking events. The user friendly place to book your events at few steps.",
@@ -92,6 +126,9 @@ export const projectsData = [
       "MongoDB",
       "Tailwind",
       "Shadcn",
+      "zod",
+      "React-Hook Form",
+      "Kinde",
       "Stripe",
       "UploadThing",
     ],
