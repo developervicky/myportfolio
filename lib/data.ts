@@ -89,7 +89,6 @@ export const projectsData = [
     tags: [
       "NextJS",
       "TypeScript",
-      "NodeJS",
       "NeonTech",
       "Tailwind",
       "Shadcn",
